@@ -43,7 +43,7 @@ nav li {
 }
 /*###################################################*/
 .div1 {
-  border: 5px outset black;
+  border: 5px outset black  ;
   background-color: lightblue;    
   text-align: center;
 }
