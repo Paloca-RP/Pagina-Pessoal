@@ -8,6 +8,9 @@ int main() {
 	ola:
 	printf ("insira um numero");
 	scanf("%d",&opah);
+	printf("***********************\n");
+	
+	printf("***********************\n");
 	
 	if(opah==1)
 	{
@@ -62,6 +65,43 @@ int main() {
 		 int n3 = n1 + 1;
 		
 		 printf("n1=%d\nn2=%d\nn3=%d\n\n", n1, n2, n3); 
+	}
+	
+	else if(opah == 5)
+	{
+		printf("fazer");
+	}
+	
+	else if (opah == 6)
+	{
+		printf("fazer");
+	}
+	
+	else if (opah == 7)
+	{
+		
+	}
+	
+	else if (opah == 8)
+	{
+		
+	}
+	
+	else if (opah == 9)
+	{
+		int aba,obo, soma, sub, mult;
+		
+		printf("inserir numero: ");
+		scanf("%d",&aba);
+		printf("\n inserir numero: ");
+		scanf("%d",&obo);
+		
+		soma=aba+obo;
+		sub=aba-obo;
+		mult=aba*obo;
+		
+		printf("\nA soma é %d, a subtração %d e a multiplicacao %d", soma, sub, mult);
+		goto ola;
 	}
 	
 	else 
