@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <float.h>
 
 int main() {
    
@@ -50,7 +51,7 @@ int main() {
 		float fator = 1.345;
 		printf("A variavel letra tem o valor: %c",val1);
 		printf("A variavel letra tem o valor: %c",val2);
-	    prinft("A variavel ano tem o valor: %d",ano);
+	    printf("A variavel ano tem o valor: %d",ano);
 	    printf("A variavel fator tem um valor inicial : %f", fator);
 	    fator = 1.200000;
 	    printf("A variavel fator tem um valor inicial : %f", fator);
@@ -69,22 +70,61 @@ int main() {
 	
 	else if(opah == 5)
 	{
-		printf("fazer");
+		printf("O Tamanho em bytes de  de um \"char\"\t\t\t: %d\n",
+		sizeof(char));
+		printf("O Tamanho em bytes de  de um \"short\"\t\t\t: %d\n",
+		sizeof(short));
+		printf("O Tamanho em bytes de  de um \"int\"\t\t\t: %d\n",
+		sizeof(int));
+		printf("O Tamanho em bytes de  de um \"double\"\t\t\t: %d\n",
+		sizeof(double));
+		
+		goto ola;
 	}
 	
 	else if (opah == 6)
-	{
-		printf("fazer");
+	{		
+		printf("O Tamanho em bytes de  de um \"char\"\t\t\t: %d\n",sizeof(char));
+		printf("Valor Max: %d\n", CHAR_MAX);
+		printf("Valor Min: %d\n", CHAR_MIN);
+		printf("O Tamanho em bytes de  de um \"short\"\t\t\t: %d\n",sizeof(short));
+		printf("Valor Max: %d\n", SHRT_MAX);
+		printf("Valor Min: %d\n", SHRT_MIN);
+		printf("O Tamanho em bytes de  de um \"int\"\t\t\t: %d\n",sizeof(int));
+		printf("Valor Max: %d\n",INT_MAX);
+		printf("Valor Min: %d\n",INT_MIN );
+		printf("O Tamanho em bytes de  de um \"float\"\t\t\t: %d\n",sizeof(float));
+		printf("Valor Max: %e\n",FLT_MAX);
+		printf("Valor Min: %e\n", FLT_MIN);
+		printf("O Tamanho em bytes de  de um \"double\"\t\t\t: %d\n",sizeof(double));
+		printf("Valor Max: %e\n", DBL_MAX);
+		printf("Valor Min: %e\n", DBL_MIN);
+		
+		goto ola;
 	}
 	
 	else if (opah == 7)
 	{
-		
+		printf("\\n = <ENTER> - CR \n");
+		printf("\\\\ = <BACKSLASH> - \\\n");
+		printf("\\t = <TAB> - VT\n");
+		printf("%%%% = <PERCENTAGE SIGN> - %%\n");
+		goto ola;		
 	}
 	
 	else if (opah == 8)
 	{
+		int dia, mes, ano;
+		printf("Insira o dia:");
+			scanf("%d",&dia);
+		printf("Insira o mes:");
+			scanf("%d",&mes);
+		printf("Insira o ano:");
+			scanf("%d",&ano);
+			
+		printf("A data introduzida é: %d / %02d / %02d \n",ano,mes,dia);
 		
+		goto ola;
 	}
 	
 	else if (opah == 9)
@@ -102,6 +142,42 @@ int main() {
 		
 		printf("\nA soma é %d, a subtração %d e a multiplicacao %d", soma, sub, mult);
 		goto ola;
+	}
+	
+	else if (opah == 10)
+	{
+		
+		int dia, mes, ano;
+		printf("Insira o dia:");
+			scanf("%d",&dia);
+		printf("Insira o mes:");
+			scanf("%d",&mes);
+		printf("Insira o ano:");
+			scanf("%d",&ano);
+			
+		printf("A data introduzida é: %d / %d / %d \n",ano,mes,dia);
+		
+		goto ola;
+	}
+	
+	else if (opah==11)
+	{
+		int num;
+	    char serie;
+	
+	    printf("Insira o numero de serie: ");
+	    scanf("%d", &num);
+	    printf("Serie: ");
+	    scanf(" %c", &serie);
+	    //Scanf de %c tem que ter um espaço antes do %
+	
+	    printf("%c - %04d", toupper(serie), num);
+	    goto ola;
+	}
+	
+	else if (opah == 12)
+	{
+		
 	}
 	
 	else 
