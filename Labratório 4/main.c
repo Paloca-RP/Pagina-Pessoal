@@ -5,13 +5,13 @@
 int main() {
    
     	
-	int opah;
+	int opah, lua=0;
 	ola:
-	printf ("insira um numero");
+	printf("***********************\n");
+	printf("meta o numero do exercio de 1 a 12\n");
+	printf("***********************\n");
 	scanf("%d",&opah);
-	printf("***********************\n");
 	
-	printf("***********************\n");
 	
 	if(opah==1)
 	{
@@ -19,7 +19,14 @@ int main() {
 		printf("****************************************");
 		printf("\nO meu primeiro programa em \"Linguagem C \" \nFoi um bom comeco.\n Vamos continuar.\n");		
 		printf("****************************************\n");
-		goto ola;
+		printf("insira um para retunar ao menu");
+		scanf("%d",&lua);
+		if(lua == 1 )
+		{
+			goto lua;
+		}			
+		else
+			printf ("adeus");
 	}
 	
 	else if (opah==2)
@@ -177,6 +184,20 @@ int main() {
 	
 	else if (opah == 12)
 	{
+		char letra1, letra2, aux;
+		printf("insira uma letra: \n");
+			scanf(" %c", &letra1);
+		printf("insira uma letra: \n");
+			scanf(" %c", &letra2);
+		printf("a primeira letra é:\t %c \n", letra1);
+		printf("a segunda letra é: \t %c \n", letra2);
+		
+		letra2 = aux;
+		letra1 = letra2;
+		aux = letra1;
+		
+		printf("depois da troca o primeiro numero:  %c \n", letra1);
+		printf("depois da troca o segundo numero: %c \n", letra2);
 		
 	}
 	
