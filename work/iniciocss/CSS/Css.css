@@ -1,0 +1,58 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.li_style{
+    color: blanchedalmond;
+}
+
+h1, h2{
+    color: blanchedalmond;
+    text-align: center;
+    
+}
+
+#sobre_p{
+    color: white;
+}
+
+h3{
+    padding: 8;
+    margin: 0;
+    background-color: #6a736c;
+}
+
+.div_style{
+    background-color: whitesmoke;
+}
+
+ul{
+    color: black;
+    text-align: left;
+}
+
+p::first-letter {
+    color: #8A2BE2;
+    font-size: 200%;
+  }
+
+:target{
+    color: thistle;
+    background-color: wheat;
+    font-weight: bold;
+}
+#ul_style{
+    list-style-image: url('../Capturar.PNG');
+}
+
+.footer_style{
+    text-align: center;
+    font-size: 70%;
+    color: white;
+}
+body > *{
+    margin: auto;
+    width: 1024px;
+}
