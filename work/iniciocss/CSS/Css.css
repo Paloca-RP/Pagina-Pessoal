@@ -94,11 +94,11 @@ nav li {
 
 }
 
-.sobre{
-    float: left;
-    position: relative;
+.adeus{
+    width: 50%;
+    display: inline-block;
 }
-.cursos{
-    float: right;
-    position: relative;
+.ola{
+    width: 40%;
+   float: right;
 }
