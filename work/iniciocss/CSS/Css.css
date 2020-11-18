@@ -56,3 +56,49 @@ body > *{
     margin: auto;
     width: 1024px;
 }
+
+#navbar {
+
+    width: 100%;
+
+    display: flex;
+
+    position: fixed;
+
+    background-color:353535;
+    
+
+    z-index: 99;
+
+}
+
+nav a {
+
+    color: #fff;
+
+    margin: auto 20px auto 40px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+nav li {
+
+    float: left;
+
+    list-style: none;
+
+    margin-left: 20px;
+
+}
+
+.sobre{
+    float: left;
+    position: relative;
+}
+.cursos{
+    float: right;
+    position: relative;
+}
