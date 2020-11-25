@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-row: template rows 10px; 
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            padding: 5px;
+        }
+
+        .grid-container > div {
+           
+            text-align: left;
+            padding: 10px 0;
+            font-size: 15px;
+        }
+
+        .grid-item1 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .grid-item2{
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Curso Técnico Superior Profissional em Tecnologias e Programação de Sistemas de Informação</h1>
+    <h4>Planos de Estudos</h4>
+    <div class="grid-container">
+        <div class="grid-item1">
+            <strong><p>Disciplinas do 1º Ano</p></strong>
+            <ul>
+                <li><a href="#">Introdução à Programação Web</a></li>
+                <li><a href="#">Lógica Computacional</a></li>
+                <li><a href="#">Inglês</a></li>
+                <li><a href="#">Algoritmos</a></li>
+                <li><a href="#">Matemática</a></li>
+                <li><a href="#">Programação Web</a></li>
+                <li><a href="#">Programação Orientada a Objetos</a></li>
+                <li><a href="#">Informática Forense</a></li>
+                <li><a href="#">Elementos de Comportamento Organizacional</a></li>
+                <li><a href="#">Matemática II</a></li>
+            </ul>
+        </div>
+        <div class="grid-item2">
+            <h3>Apresentação do Curso</h3>
+            <p>text1</p>
+            <p>TExt2</p> 
+        </div>
+    </div>
+</body>
+</html>
