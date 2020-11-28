@@ -1,0 +1,23 @@
+#img-item{
+    position: relative;
+    top: 100px;
+    right: 50px;
+}
+.img{
+    width: 400px;
+    height: 350px;
+    top: 50px;
+    right: 0px;
+    position: relative;
+    z-index: -1;
+}
+
+.texto{
+    width: 600px;
+    height: 500px;
+    background-color: brown;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: medium;
+    text-align: justify;
+}
